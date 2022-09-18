@@ -1,0 +1,166 @@
+//program 1
+
+int main()
+{
+   int i=1,n,s=0;
+   printf("enter number of terms");
+   scanf("%d",&n);
+   while(i<=n)
+      {
+        s+=i;
+        i++;
+      }
+      printf("%d\n",s);
+      getch();
+}
+
+//program 2
+
+int main()
+{
+   int i=1,n,s=0;
+   printf("enter number of terms");
+   scanf("%d",&n);
+   while(i<=n)
+      {
+        s+=i*2;
+        i++;
+      }
+      printf("%d\n",s);
+      getch();
+}
+
+//program 3
+
+int main()
+{
+   int i=1,n,s=0;
+   printf("enter number of terms");
+   scanf("%d",&n);
+   while(i<=n)
+      {
+        s+=i*2-1;
+        i++;
+      }
+      printf("%d\n",s);
+      getch();
+}
+
+//program 4
+
+int main()
+{
+   int i=1,n,s=0;
+   printf("enter number of terms");
+   scanf("%d",&n);
+   while(i<=n)
+      {
+        s+=i*i;
+        i++;
+      }
+      printf("%d\n",s);
+      getch();
+}
+
+// program 5
+
+int main()
+{
+   int i=1,n,s=0;
+   printf("enter number of terms");
+   scanf("%d",&n);
+   while(i<=n)
+      {
+        s+=i*i*i;
+        i++;
+      }
+      printf("%d\n",s);
+      getch();
+}
+
+//program 6
+
+int main()
+{
+   int n,fact=1;
+   printf("enter a number");
+   scanf("%d",&n);
+   while(n!=0)
+      {
+        fact=fact*n;
+        n--;
+      }
+      printf("%d\n",fact);
+      getch();
+}
+
+//program 7
+
+int main()
+{
+   int n,count=0;
+   printf("enter a number");
+   scanf("%d",&n);
+   while(n!=0)
+      {
+        n%10;
+        count+=1;
+        n=n/10;
+      }
+      printf("%d\n",count);
+      getch();
+}
+
+//program 8
+
+int main()
+{
+    int i,n;
+    printf("enter a number");
+    scanf("%d",&n);
+    for(i=2;i<n;i++)
+      if(n%i==0)
+        {
+         printf("not prime");
+         break;
+        }
+    if(i==n)
+        printf("prime");
+}
+
+
+//program 9
+
+int main()
+{
+    int a=4,b=6,l,lcm;
+    if(a>b)
+        l=a;
+    else
+        l=b;
+    while(1)
+    {
+        if(l%a==0&&l%b==0)
+        {
+            printf("LCM of %d and %d is %d  ",a,b,l);
+
+            break;
+        }
+        l+=1;
+    }
+    getch();
+}
+
+//program 10
+
+int main()
+{
+    int rev,n=4568;
+    while(n!=0)
+    {
+        rev=n%10;
+        printf("%d",rev);
+        n=n/10;
+    }
+
+}
